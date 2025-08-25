@@ -118,6 +118,7 @@ export interface ButtonProps {
   loading?: boolean
   icon?: React.ComponentType<{ className?: string }>
   iconPosition?: 'left' | 'right'
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export interface CardProps {

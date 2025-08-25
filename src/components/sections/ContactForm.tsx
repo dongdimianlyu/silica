@@ -140,7 +140,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             <CheckCircleIcon className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
             <div>
               <p className="text-green-800 font-medium">Message sent successfully!</p>
-              <p className="text-green-700 text-sm">We'll get back to you within 24 hours.</p>
+              <p className="text-green-700 text-sm">We&apos;ll get back to you within 24 hours.</p>
             </div>
           </motion.div>
         )}

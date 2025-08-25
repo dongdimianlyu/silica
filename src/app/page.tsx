@@ -1,9 +1,7 @@
 import Hero from '@/components/sections/Hero'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import ContactForm from '@/components/sections/ContactForm'
-import ClientOnly from '@/components/ui/ClientOnly'
 import { ScrollReveal, StaggerContainer, CounterAnimation } from '@/components/animations/ScrollAnimations'
-import { ReactParticleSystem } from '@/components/animations/ParticleSystem'
 
 export default function Home() {
   return (

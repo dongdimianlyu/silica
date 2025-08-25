@@ -36,66 +36,6 @@ const Card: React.FC<CardProps> = ({
   )
 }
 
-Card.Header = function CardHeader({
-  className,
-  children
-}: {
-  className?: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className={cn('p-6 pb-0', className)}>
-      {children}
-    </div>
-  )
-}
 
-Card.Body = function CardBody({
-  className,
-  children
-}: {
-  className?: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className={cn('p-6', className)}>
-      {children}
-    </div>
-  )
-}
-
-Card.Footer = function CardFooter({
-  className,
-  children
-}: {
-  className?: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className={cn('px-6 pb-6', className)}>
-      {children}
-    </div>
-  )
-}
-
-Card.Image = function CardImage({
-  src,
-  alt,
-  className
-}: {
-  src: string
-  alt: string
-  className?: string
-}) {
-  return (
-    <div className={cn('overflow-hidden rounded-t-lg', className)}>
-      <img
-        src={src}
-        alt={alt}
-        className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
-      />
-    </div>
-  )
-}
 
 export default Card

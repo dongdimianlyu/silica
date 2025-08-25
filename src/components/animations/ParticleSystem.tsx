@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState, useEffect, useRef, useMemo } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import React, { useState, useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
 import { Particle } from '@/types'
 import { getRandomFloat, getRandomInt } from '@/lib/utils'
 
@@ -21,7 +21,7 @@ const ParticleSystem: React.FC<ParticleSystemProps> = ({
   color = 'rgba(0, 212, 255, 0.4)'
 }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number>(0)
   const particlesRef = useRef<Particle[]>([])
 
   const densityMultiplier = {
@@ -143,12 +143,19 @@ const ParticleSystem: React.FC<ParticleSystemProps> = ({
 // Simpler React-based particle system as fallback
 export const ReactParticleSystem: React.FC<ParticleSystemProps> = ({
   count = 30,
-  speed = 1,
   className = '',
   density = 'medium',
   color = '#00D4FF'
 }) => {
-  const [particles, setParticles] = useState<any[]>([])
+  const [particles, setParticles] = useState<Array<{
+    id: string;
+    x: number;
+    y: number;
+    size: number;
+    opacity: number;
+    duration: number;
+    delay: number;
+  }>>([])
   const [isClient, setIsClient] = useState(false)
 
   const densityMultiplier = {

@@ -31,13 +31,7 @@ const Footer: React.FC = () => {
     { name: 'Custom Solutions', href: '#contact' }
   ]
 
-  const industries = [
-    { name: 'Electronics', href: '#applications' },
-    { name: 'Pharmaceuticals', href: '#applications' },
-    { name: 'Food Packaging', href: '#applications' },
-    { name: 'Automotive', href: '#applications' },
-    { name: 'Textiles', href: '#applications' }
-  ]
+
 
   const contactInfo = [
     {

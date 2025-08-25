@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import { ChevronRightIcon, PlayCircleIcon } from '@heroicons/react/24/outline'
 import { scrollToElement } from '@/lib/utils'
 import Button from '@/components/ui/Button'
-import ClientOnly from '@/components/ui/ClientOnly'
-import FloatingShapes from '@/components/animations/FloatingShapes'
 
 const Hero: React.FC = () => {
   const handleGetQuote = () => {

@@ -28,6 +28,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   href,
   target = '_self',
+  type = 'button',
   disabled = false,
   loading = false,
   icon: Icon,
@@ -75,7 +76,7 @@ const Button: React.FC<ButtonProps> = ({
       className={baseClasses}
       onClick={onClick}
       disabled={disabled || loading}
-      type="button"
+      type={type}
     >
       {content}
     </button>

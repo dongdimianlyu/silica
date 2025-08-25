@@ -63,34 +63,12 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
       transition={{
         duration,
         delay,
-        ease,
+        ...(ease && { ease: ease as "easeOut" | "easeIn" | "easeInOut" | "linear" }),
         staggerChildren: stagger
       }}
     >
       {children}
     </motion.section>
-  )
-}
-
-AnimatedSection.Item = function AnimatedItem({
-  children,
-  className,
-  animation = 'slideUp',
-  delay = 0
-}: {
-  children: React.ReactNode
-  className?: string
-  animation?: keyof typeof animationVariants
-  delay?: number
-}) {
-  return (
-    <motion.div
-      className={className}
-      variants={animationVariants[animation]}
-      transition={{ delay }}
-    >
-      {children}
-    </motion.div>
   )
 }
 
