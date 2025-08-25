@@ -27,9 +27,10 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary-dark to-gray-900 overflow-hidden">
       {/* Background Elements */}
-      <ClientOnly>
+{/* Temporarily disabled - fixing CSS styling issue */}
+      {/* <ClientOnly>
         <FloatingShapes count={20} className="opacity-60" />
-      </ClientOnly>
+      </ClientOnly> */}
       
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-transparent to-primary-dark/90" />

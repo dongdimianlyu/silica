@@ -13,9 +13,10 @@ export default function Home() {
 
       {/* Products Section */}
       <section id="products" className="relative py-20 bg-gray-50 overflow-hidden">
-        <ClientOnly>
+{/* Temporarily disabled - fixing CSS styling issue */}
+        {/* <ClientOnly>
           <ReactParticleSystem density="low" color="rgba(0, 102, 204, 0.1)" count={30} />
-        </ClientOnly>
+        </ClientOnly> */}
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal direction="up" className="text-center mb-16">
@@ -214,7 +215,10 @@ export default function Home() {
 
             {/* Contact Section */}
       <section id="contact" className="relative py-20 bg-gray-900 text-white overflow-hidden">
-        <ReactParticleSystem density="medium" color="rgba(0, 212, 255, 0.2)" count={40} />
+{/* Temporarily disabled - fixing CSS styling issue */}
+        {/* <ClientOnly>
+          <ReactParticleSystem density="medium" color="rgba(0, 212, 255, 0.2)" count={40} />
+        </ClientOnly> */}
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal direction="up" className="text-center mb-16">
